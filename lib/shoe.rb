@@ -6,9 +6,9 @@ class Shoe
 
 
 
-  def initialize(brand.uniq)
+  def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    BRANDS << brand unless BRANDS.include?(brand)
 
   end
 
